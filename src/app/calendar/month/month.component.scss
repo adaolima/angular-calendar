@@ -1,0 +1,21 @@
+.calendar-month {
+  &__header {
+    display: flex;
+    justify-content: space-between;
+  }
+  &__week-names,
+  &__grid {
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+    grid-template-rows: repeat(5, 70px);
+    grid-gap: 3px;
+    padding: 0px;
+  }
+  &__week-names {
+    grid-template-rows: auto;
+    padding: 0;
+    list-style: none;
+    font-weight: bold;
+  }
+  
+}

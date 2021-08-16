@@ -1,18 +1,18 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 
-import { WeekComponent } from './week.component';
+import { MonthComponent } from './month.component';
 import { CellComponent } from './cell/cell.component';
 
 
 @NgModule({
   declarations: [
-    WeekComponent,
+    MonthComponent,
     CellComponent
   ],
   imports: [
     CommonModule
   ], 
-  exports: [WeekComponent]
+  exports: [MonthComponent]
 })
-export class WeekModule { }
+export class MonthModule { }

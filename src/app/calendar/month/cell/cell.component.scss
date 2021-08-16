@@ -1,0 +1,6 @@
+@import "src/styles/variables";
+
+.calendar-day {
+  min-height: 70px;
+  background-color: $brand-bg;
+}

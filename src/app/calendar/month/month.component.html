@@ -1,0 +1,15 @@
+<div class="calendar-month">
+  <h1 class="calendar-month__header"><span>{{ month.name }}, {{ currentDay }}</span> <span>{{ year }}</span></h1>
+  <ul class="calendar-month__week-names">
+    <li>SUN</li>
+    <li>MON</li>
+    <li>TUE</li>
+    <li>WED</li>
+    <li>THU</li>
+    <li>FRI</li>
+    <li>SAT</li>
+  </ul>
+  <div class="calendar-month__grid">
+    <app-cell *ngFor="let day of grid" [day]="day"></app-cell>
+  </div>
+</div>
