@@ -3,14 +3,18 @@ import { NgModule } from '@angular/core';
 
 import { AppComponent } from './app.component';
 import { WeekModule } from './week/week.module';
+import { HttpClientModule } from '@angular/common/http';
+import { CalendarComponent } from './calendar/calendar.component';
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    CalendarComponent
   ],
   imports: [
     BrowserModule,
-    WeekModule
+    WeekModule,
+    HttpClientModule,
   ],
   providers: [],
   bootstrap: [AppComponent]
