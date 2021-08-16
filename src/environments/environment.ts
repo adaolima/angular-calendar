@@ -3,7 +3,9 @@
 // The list of file replacements can be found in `angular.json`.
 
 export const environment = {
-  production: false
+  production: false,
+  calendarURL: 'https://timelyapp.time.ly', 
+  routeTOKEN: '/6a37fb6n'
 };
 
 /*
