@@ -19,7 +19,7 @@ export class LocalStorageService {
     return false
   }
 
-  get(key: string):boolean {
+  get(key: string) {
     if(this.storage) {
       return JSON.parse(this.storage.getItem(key))
     }
