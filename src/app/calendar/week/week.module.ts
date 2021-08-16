@@ -6,13 +6,13 @@ import { CellComponent } from './cell/cell.component';
 
 
 @NgModule({
-  imports: [
-    CommonModule
-  ], 
   declarations: [
     WeekComponent,
     CellComponent
   ],
+  imports: [
+    CommonModule
+  ], 
   exports: [WeekComponent]
 })
 export class WeekModule { }
