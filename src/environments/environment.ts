@@ -5,7 +5,7 @@
 export const environment = {
   production: false,
   calendarURL: 'https://timelyapp.time.ly', 
-  routeTOKEN: '/6a37fb6n'
+  routeTOKEN: 'https://calendar.time.ly/6a37fb6n'
 };
 
 /*
