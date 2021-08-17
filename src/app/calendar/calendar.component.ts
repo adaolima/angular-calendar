@@ -22,7 +22,7 @@ export class CalendarComponent implements OnInit {
 
   async ngOnInit() {
 
-    // Temporaly to not take to much requests
+    // Temporarily to not take to much requests
     if(this.localStorageService.get('calendarId')) {
       this.calendarId = this.localStorageService.get('calendarId')
     } else {
@@ -32,7 +32,7 @@ export class CalendarComponent implements OnInit {
       })
     }
 
-    // Temporaly to not take to much requests
+    // Temporarily to not take to much requests
     if(this.localStorageService.get('eventsList')) {
       this.eventsList = this.localStorageService.get('eventsList')
     } else {
