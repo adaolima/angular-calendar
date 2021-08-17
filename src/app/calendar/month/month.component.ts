@@ -13,7 +13,7 @@ export class MonthComponent implements OnInit {
   @Input() public month: any = {
     name: 'August',
     days: 30,
-    startOn: 'Tuesday'
+    startOn: 2 // 1 - 7
   }
   public currentDay: number = 16
   public grid: number[] = new Array(35)
