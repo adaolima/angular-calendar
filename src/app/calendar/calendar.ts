@@ -46,6 +46,7 @@ export interface ICalendarEventsImages {
     },
   }
 }
+
 export interface ICalendarInfo {
   data: {
     id: number;
@@ -63,4 +64,10 @@ export interface ICalendarInfo {
     }
 
   }
+}
+
+export interface IMonth {
+  name: string;
+  days: number;
+  startAt: number;
 }
