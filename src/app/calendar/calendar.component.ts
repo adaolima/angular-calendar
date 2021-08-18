@@ -12,15 +12,21 @@ import { LocalStorageService } from '../shared/local-storage.service';
 })
 export class CalendarComponent implements OnInit {
 
+  static readonly MONTHS: string[] = ['Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun', 'Jul', 'Aug', 'Sep', 'Oct', 'Nov', 'Dez']
+  static readonly START_YEAR: number = 1900
+  static readonly END_YEAR: number = new Date().getFullYear() + 1
+
+
+  calendarId: number
   eventsList: ICalendarEvents[]
-  calendarId: number;
+
 
   constructor(
     private calendarService: CalendarService, 
     private localStorageService: LocalStorageService
   ) { }
 
-  async ngOnInit() {
+  ngOnInit() {
 
     // Temporarily to not take to much requests
     if(this.localStorageService.get('calendarId')) {
@@ -43,4 +49,5 @@ export class CalendarComponent implements OnInit {
     }
 
   }
+
 }
