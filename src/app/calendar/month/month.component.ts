@@ -1,4 +1,4 @@
-import { Component, OnInit, Input, OnChanges, SimpleChanges } from '@angular/core';
+import { Component, OnInit, OnChanges, SimpleChanges, Input } from '@angular/core';
 import { ICalendar, IMonth } from '../calendar';
 
 @Component({
@@ -19,10 +19,10 @@ export class MonthComponent implements OnInit, OnChanges {
   ngOnInit() {
   }
   ngOnChanges(changes: SimpleChanges) {
-    const { name, days, startAt } = this.getMonthInfo(this.month, this.year)
+    const { name, days, startAt } = this.getMonthInfo( changes.month.currentValue, changes.year.currentValue )
   }
 
-  getMonthInfo(month:number, year:number): IMonth {
+  private getMonthInfo(month:number, year:number): IMonth {
     const d = new Date(year, month, 0)
     // return the number of days in a month/year
     return {
